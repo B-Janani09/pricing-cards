@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planify - Simple Pricing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <span class="eyebrow">SIMPLE, TRANSPARENT PRICING</span>
+      <h1>Plans that grow <span>with you.</span></h1>
+      <p>Everything you need to do your best work, at every stage.</p>
+
+      <div class="billing">
+        <span id="monthly-label" class="active-label">Monthly</span>
+        <button id="billing-toggle" class="toggle" type="button"
+          aria-label="Switch to yearly billing" aria-pressed="false">
+          <span></span>
+        </button>
+        <span id="yearly-label">Yearly</span>
+        <span class="save-badge">Save 20%</span>
+      </div>
+    </header>
+
+    <section class="pricing-grid" aria-label="Pricing plans">
+      <article class="price-card">
+        <div class="plan-icon">✦</div>
+        <h2>Starter</h2>
+        <p class="plan-description">For personal projects and new ideas.</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="0" data-yearly="0">0</span>
+          <span class="period">/ month</span>
+        </div>
+        <p class="billing-note">Free forever</p>
+        <button class="plan-button" type="button" data-plan="Starter">Get Started</button>
+        <div class="features">
+          <h3>What's included</h3>
+          <p>✓ Up to 3 projects</p>
+          <p>✓ Basic analytics</p>
+          <p>✓ Community support</p>
+          <p>✓ Core integrations</p>
+        </div>
+      </article>
+
+      <article class="price-card featured">
+        <span class="popular-badge">MOST POPULAR</span>
+        <div class="plan-icon">✧</div>
+        <h2>Professional</h2>
+        <p class="plan-description">For creators ready to do more.</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="19" data-yearly="15">19</span>
+          <span class="period">/ month</span>
+        </div>
+        <p class="billing-note">Billed monthly</p>
+        <button class="plan-button primary" type="button" data-plan="Professional">Choose Professional</button>
+        <div class="features">
+          <h3>Everything in Starter, plus</h3>
+          <p>✓ Unlimited projects</p>
+          <p>✓ Advanced analytics</p>
+          <p>✓ Priority support</p>
+          <p>✓ Team collaboration</p>
+        </div>
+      </article>
+
+      <article class="price-card">
+        <div class="plan-icon">✺</div>
+        <h2>Enterprise</h2>
+        <p class="plan-description">For teams building at scale.</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="49" data-yearly="39">49</span>
+          <span class="period">/ month</span>
+        </div>
+        <p class="billing-note">Billed monthly</p>
+        <button class="plan-button" type="button" data-plan="Enterprise">Choose Enterprise</button>
+        <div class="features">
+          <h3>Everything in Professional, plus</h3>
+          <p>✓ Unlimited team members</p>
+          <p>✓ Custom integrations</p>
+          <p>✓ Dedicated support</p>
+          <p>✓ Enhanced security</p>
+        </div>
+      </article>
+    </section>
+
+    <p id="selection-message" class="selection-message" role="status"></p>
+
+    <footer>Simple plans. Powerful possibilities. ✦</footer>
+  </main>
+</body>
+</html>
